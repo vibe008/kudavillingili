@@ -1,0 +1,34 @@
+.carousel .carousel-arrow-default{
+  	border: 0 solid!important;
+  	background: none !important;
+}
+.carousel .carousel-left-arrow.carousel-arrow-default:before, .carousel .carousel-right-arrow.carousel-arrow-default:before {
+    content: "";
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAAHdbkFIAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAQKADAAQAAAABAAAAQAAAAABlmWCKAAADqUlEQVR4Ae1b21LbMBANdIZ+AZ3phQf6Dn8S/qbwOXUv9EvgPzx0Sil9K32F9hxjhbWzK9tJViGONKORtJL27Fkra9lyJpOVpn+PaS+qtB501zkoDNgNlVBSA+rHod0o686GbIUNqL+OqiM+U9egaZ9B++YgdNzHOtkXtyFq4Mo6YcXPypZlzcH8MihCeWZZuGN1SDkVhfYOUqiznFtuspN1zC2E7FLUq2pDm+yMocpxc3VMvOZkprnOLRGA+hfk9wvTpfPqdLGQEkx+FTSw7FKy9DowFRBZWtBewsGy6FKuJz0EZVB4FCaGMmpBGBSzpFNBbDIBogq6JlOB6gNMPBGT/1oOpIK5hIkyEp3ODegSELlO8Vtll6Lc/3w8gAv6MVzVujTvUS5WA/Rty4DQjO+1PKwBcrU9CRaIci7IeODPdAK4EOCyuthdYKZ5YAXI1W5OWiDqaQMBgGUIm9kxkNNiw4FWbX5nqE+Vm8U09pwFHJU15MODeE/MCZQ3dg1PZKua33WH+k8tsND0XflA+RaQWmWa3z5ADwVw+ujXd23kcdkD4/UAfoJvkH8jn3uwjD4aEJAxQAA/YJf/QrSXrqqPFhGtuzQIaT8yZlBXHwNuFY23MOJEkfuIAHZB2koqfBAVrQA/VQygqFSG+4gAdmQYce+DqGiFAXuGERSvbHEq0E0RwO4MQ7ZvcX4wPFE2febYggHW4vzqCNtUDSO0WPG9OcqpBXBrQb52gnxUC+D1/SQj190/KAH8DFlLpavLqRyolxoyZEUKcGuxTV3Bwe6lwZpi3/gPACvI+C82utVgXrq6XCpXDChkv3sdBvwSRvguNnc2GSB7IHsgeyB7YHQewE3qAHn25YO4aXHnlO4ZcV2eBckrQdqqFujwO0ZYF3nigthni7UiLyFLc8KQ0ikkhUxyfROPXtMePqdwCEjxwcU61LKcw/cJvg81Kci3MUBqimw9QmrOGGfQBFOer2pvjTQnBNk4gybY8S239elFIC/LHDRrb4w2aPLVIpf7kDTqoPlngCduMNb35W87sqdogxQ/RuobNNO8fk9BnBggPnRDle4AxNMJIL59d4eBSx3Dq7T5+wPQ4DfOQ3eIm/0+GIS383YH4sfI3M31Tdzw+H336BnIpG6Q4Anidm15QZgPPdbpJbrUNIqgdgBq8gBLZSqEDICbHdRay50f1PVJo93D839gVhpHUJNXXKuD/Tvkc2R+y/cDmU451MZmWfZA9kD2wHPywH/M3O5eFgfk4gAAAABJRU5ErkJggg==);
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+.carousel .carousel-left-arrow.carousel-arrow-default:before {
+    transform: rotate(
+		180deg
+	);
+}
+.carousel .carousel-arrow {
+    bottom: calc(50% - 16px)!important;
+}
+.carousel .carousel-left-arrow {
+    left: 10px!important;
+}
+.carousel .carousel-right-arrow {
+    right: 10px!important;
+}
+.carousel .carousel-dots {
+    bottom: 0px;
+}
+.carousel .carousel-dots button.selected {
+    color: #00a6bc;
+}
+.carousel .carousel-dots button {
+    color: #fff;
+}

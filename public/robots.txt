@@ -1,0 +1,4 @@
+User-agent: *
+Allow: *
+
+Sitemap: https://kudavillingili.com/sitemap.xml

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kudavillingili Resort</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="360/vendor/reset.min.css">
+<link rel="stylesheet" href="360/style.css">
+
+<link rel="stylesheet" href="360/owl/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="360/owl/assets/owl.theme.default.min.css">
+  <link rel="icon" type="image/x-icon" href="360/img/favicon.ico">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList" class='sceneList' style='display:none;'>
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene child" data-id="0-kv-map">
+        <li class="text">Kudavillingili 360 View</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene child" data-id="1-beach-villa">
+        <li class="text">Beach Villa</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-beach-villa-bathroom">
+        <li class="text">Beach Villa Bathroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-beach-villa-outside-area">
+        <li class="text">Beach Villa Outside Area</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-skyhaven">
+        <li class="text">Deluxe Haven with Patio</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-skyhaven-exterior">
+        <li class="text">Deluxe Haven with Patio Outside Area</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-skyhaven-bathroom">
+        <li class="text">Deluxe Haven with Patio Bathroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-skyhaven-upstairs">
+        <li class="text">Skyhaven</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-skyhaven-upstairs-balcony">
+        <li class="text">Skyhaven Balcony Area</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="53-water-villa-bathroom">
+        <li class="text">Water Villa Bathroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-water-villa">
+        <li class="text">Water Villa</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-water-villa-with-pool">
+        <li class="text">Water Villa With Pool</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-water-villa-pool-area">
+        <li class="text">Water Villa Pool Area</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-water-villa-aerial">
+        <li class="text">Water Villa Aerial</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="34-beach-villa-with-pool-bathroom">
+        <li class="text">Beach Villa with Pool Bathroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-beach-villa-with-pool">
+        <li class="text">Beach Villa with Pool</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-beach-villa-pool">
+        <li class="text">Beach Villa Pool</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-suite-room-bathroom">
+        <li class="text">Suite Room Bathroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-suite-room-exterior">
+        <li class="text">Suite Room Exterior</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-suite-room">
+        <li class="text">Suite Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-suite-room-kitchen">
+        <li class="text">Suite Room Kitchen</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-suite-room-upstairs-bathroom">
+        <li class="text">Suite Room Upstairs Bathroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-suite-room-upstairs">
+        <li class="text">Suite Room Upstairs</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="23-restaurant-1">
+        <li class="text">The Restaurant</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-restaurant-2">
+        <li class="text">The Restaurant Fire Pavilion</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-restaurant-3">
+        <li class="text">The Restaurant Interior</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-restaurant-4">
+        <li class="text">The Restaurant Interior 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-restaurant-lobby">
+        <li class="text">The Restaurant Buffet area</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-restaurant-exterior">
+        <li class="text">The Restaurant Exterior</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-marumi-entrance">
+        <li class="text">Marumi Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-marumi-exterior">
+        <li class="text">Marumi Exterior</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-marumi-interior">
+        <li class="text">Marumi Interior</li>
+      </a>
+
+     <a href="javascript:void(0)" class="scene" data-id="52-the-hawkers">
+        <li class="text">The Hawkers</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-hawkers-east">
+        <li class="text">East</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="49-hawkers-spice">
+        <li class="text">Spice</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="30-hawkers-med">
+        <li class="text">Med</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="50-hawkers-bar">
+        <li class="text">The Bar</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="15-the-cigar-lounge">
+        <li class="text">The Cigar Lounge</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-the-cigar-lounge-balcony">
+        <li class="text">The Cigar Lounge Balcony</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-dive-center">
+        <li class="text">Dive Center</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="13-chicken-point">
+        <li class="text">Chickens Surf Point</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="20-kids-club">
+        <li class="text">Kids Club</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-kids-club-outside">
+        <li class="text">Kids Club Outside</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="22-the-library-interior">
+        <li class="text">The Library</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="21-the-library">
+        <li class="text">The Library Outside</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-arrival-pavilion-rest-area">
+        <li class="text">Arrival Pavilion</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="10-arrival-pavilion">
+        <li class="text">Arrival Jetty</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="16-reception-concierge">
+        <li class="text">Reception</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-retail-shop">
+        <li class="text">Retail Village</li>
+      </a>
+    
+<!--       <a href="javascript:void(0)" class="scene" data-id="43-3114-bedroom">
+        <li class="text">3114 Bedroom</li>
+      </a> -->
+    
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-beach-club-interior">
+        <li class="text">The Club</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="9-beach-club-area">
+        <li class="text">The Club Beach</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="33-romantic-beach-club">
+        <li class="text">Destination Dining</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-the-spa-aerial">
+        <li class="text">The Spa Aerial</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="46-spa-interior">
+        <li class="text">The Spa</li>
+      </a>
+
+      <a href="javascript:void(0)" class="scene" data-id="44-spa-deck">
+        <li class="text">The Spa Deck</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-spa-exterior">
+        <li class="text">The Spa Outside</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-spa-room">
+        <li class="text">The Spa Treatment Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-spa-room-2">
+        <li class="text">The Spa Treatment Room 2</li>
+      </a>
+    
+  </ul>
+</div>
+  
+<div class='toolbarMenuItems' style='display:none;'>
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="360/img/play.png">
+  <img class="icon on" src="360/img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="360/img/fullscreen.png">
+  <img class="icon on" src="360/img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="360/img/expand.png">
+  <img class="icon on" src="360/img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="360/img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="360/img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="360/img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="360/img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="360/img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="360/img/minus.png">
+</a>
+  
+</div>
+
+<div class='manipulates' style='display:none;'>
+<ul class="owl-carousel sceneListSlider">
+  <div class='relative_box'> 
+      <a href="javascript:void(0)" class="scene" data-id="0-kv-map">
+        <img src='https://cdn.maldivesvirtualtour.com/kuda-villingili/panos/Aerial_-_Pool.tiles/thumb.jpg'>
+        <h3><span>Pool Aerial</span></h3>
+      </a>
+  </div>
+
+  <div class='relative_box'> 
+      <a href="javascript:void(0)" class="scene" data-id="58-the-spa-aerial">
+        <img src='https://cdn.maldivesvirtualtour.com/kuda-villingili/panos/Aerial_-_Spa.tiles/thumb.jpg'> 
+        <h3><span>The Spa Aerial</span></h3>
+      </a>
+  </div>
+
+
+  <div class='relative_box'> 
+      <a href="javascript:void(0)" class="scene" data-id="57-water-villa-aerial">
+        <img src='https://cdn.maldivesvirtualtour.com/kuda-villingili/panos/Aerial_-_Water_Villa.tiles/thumb.jpg'> 
+        <h3><span>Water Villa Aerial</span></h3>
+      </a>
+  </div>
+
+  <div class='relative_box'> 
+      <a href="javascript:void(0)" class="scene" data-id="10-arrival-pavilion">
+        <img src='https://cdn.maldivesvirtualtour.com/kuda-villingili/panos/Arrival_Jetty.tiles/thumb.jpg'>
+        <h3><span>Arrival Jetty</span></h3> 
+      </a>
+  </div>
+
+  <div class='relative_box'> 
+      <a href="javascript:void(0)" class="scene" data-id="51-beach-club-interior">
+        <img src='https://cdn.maldivesvirtualtour.com/kuda-villingili/panos/Beach_Club.tiles/thumb.jpg'>
+        <h3><span>Beach Club</span></h3> 
+      </a>
+  </div>
+
+  <div class='relative_box'> 
+      <a href="javascript:void(0)" class="scene" data-id="17-dive-center">
+        <img src='https://cdn.maldivesvirtualtour.com/kuda-villingili/panos/Dive_School.tiles/thumb.jpg'> 
+        <h3><span>Dive Center</span></h3>
+      </a>
+  </div>
+
+  <div class='relative_box'> 
+      <a href="javascript:void(0)" class="scene" data-id="5-skyhaven-exterior">
+        <img src='https://cdn.maldivesvirtualtour.com/kuda-villingili/panos/Double_Story_Villa.tiles/thumb.jpg'> 
+        <h3><span>Skyhaven</span></h3>
+      </a>
+  </div>
+
+</ul>
+</div>
+</div>
+
+<script src="360/vendor/screenfull.min.js" ></script>
+<script src="360/vendor/bowser.min.js" ></script>
+<script src="360/vendor/marzipano.js" ></script>
+
+<script src="360/js/jquery-3.4.1.min.js"></script>
+<script src="360/owl/owl.carousel.min.js"></script>
+
+<script src="360/data.js"></script>
+<script src="360/index.js"></script>
+
+
+<script>
+  
+var view_scene_id;
+let searchParams = new URLSearchParams(window.location.search)
+if (searchParams.has('scene')) {
+    view_scene_id = searchParams.get('scene');
+    $('[data-id="' +view_scene_id+ '"]')[0].click();
+    $('.sceneList').hide();
+    $('.toolbarMenuItems').hide();
+} 
+else {
+    $('.sceneList').show();
+    $('.toolbarMenuItems').show();
+}
+ 
+var coursel = $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin: 3,
+    responsiveClass:true,
+    responsive:{
+        200:{
+            items:4,
+            nav:true
+        },
+        600:{ 
+            items:4,
+            nav:true
+        },
+        1000:{
+            items:6,
+            nav:true,
+            loop:false
+        }
+    }
+});
+
+
+$('#sceneListToggle').click( function() {
+  if( $(this).hasClass('enabled') ) $('.manipulate').hide(100);
+  else $('.manipulate').show(100); 
+});
+
+</script>
+
+
+</body>
+</html>
