@@ -37,7 +37,7 @@ const TheRestaurant = ( props ) => {
 					<HawkersDescriptionContainer isLight={ true }>
 						<HawkersTitle isMobile={ props.isMobile } background={ props.data.logo_image } />
 						<HawkersDescription isMobile={ props.isMobile }>
-							"The Restaurant combines three chic and sophisticated dining spaces.  Breakfast at The Restaurant is a wholesome experience with natural and healthy cuisine ranging from local smoked fish, exotic homemade jams, honey infused with locally grown herbs, and options of plant-based, dairy-free, or gluten-free dishes."
+							The Restaurant combines three chic and sophisticated dining spaces.  Breakfast at The Restaurant is a wholesome experience with natural and healthy cuisine ranging from local smoked fish, exotic homemade jams, honey infused with locally grown herbs, and options of plant-based, dairy-free, or gluten-free dishes.
 						</HawkersDescription>
 					</HawkersDescriptionContainer>
 				</div>
@@ -50,7 +50,7 @@ const TheRestaurant = ( props ) => {
 					<HawkersBackgroundImage isMobile={ props.isMobile } image={ props.data.image } />
 					<HawkersTitle isMobile={ props.isMobile } background={ props.data.logo_image } />
 					<HawkersDescription isMobile={ props.isMobile }>
-						"The Restaurant combines three chic and sophisticated dining spaces.Breakfast at The Restaurant is a wholesome experience with natural and healthy cuisine ranging from local smoked fish, exotic homemade jams, honey infused with locally grown herbs, and options of plant-based, dairy-free, or gluten-free dishes."
+				    	The Restaurant combines three chic and sophisticated dining spaces.Breakfast at The Restaurant is a wholesome experience with natural and healthy cuisine ranging from local smoked fish, exotic homemade jams, honey infused with locally grown herbs, and options of plant-based, dairy-free, or gluten-free dishes. 
 					</HawkersDescription>
 				</>
 			}
