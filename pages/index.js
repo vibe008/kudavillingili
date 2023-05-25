@@ -75,7 +75,8 @@ const Home = (props) => {
 				<meta name="title" content={seo_title} />
 				<meta name="description" content={seo_description} />
 				<meta property="og:type" content="website" />
-				<meta property="og:url" content="https://kudavillingili.com/" />
+				<meta property="og:url" content="https://www.kudavillingili.com/" />
+				{/* <meta property="og:url" content="https://kudavillingili.com/" /> */}
 				<meta property="og:title" content={seo_title} />
 				<meta property="og:description" content={seo_description} />
 				<meta property="og:image" content={header_image} />
@@ -163,9 +164,11 @@ export const getServerSideProps = async () => {
 		header_image: response.data.header_image,
 		header_mobile_image: response.data.header_mobile_image,
 		rooms: response.data.accommodation.room,
-		seo_description: response.data.seo_description,
+		// seo_description: response.data.seo_description,
+		seo_description: "Looking for a luxury resort in the Maldives? Visit Kuda Villingili Resort, a private island where time & space are redefined. The resort’s focus on time & space, balancing a sense of togetherness & inclusivity with privacy & independence, allows guests to have a personal experience, making each journey unique.",
 		seo_keywords: response.data.seo_keywords,
-		seo_title: response.data.seo_title,
+		seo_title: "Luxury Resort in Maldives | Beach Resorts Near Male Airport | Best Resort & Hotel in Maldives",
+		// seo_title: response.data.seo_title,
 		time_space_redefined: response.data.time_space_redefined,
 		title: response.data.title,
 		video: response.data.video,

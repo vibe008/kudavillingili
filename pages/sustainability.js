@@ -110,8 +110,10 @@ export async function getServerSideProps() {
 		footnote: response.data.footnote,
 		faq,
 		header_image: 'https://kudavillingili-maldives.ams3.digitaloceanspaces.com/sustainability/sustainability_bg.jpg',
-		seo_description: 'Sustainability | Kuda Villingili',
-		seo_title: 'Sustainability | Kuda Villingili',
+		seo_description: 'At Kuda Villingili, we are committed to sustainable tourism & exert conscious efforts to preserve our natural environment while reducing our carbon footprint. To know more, visit us now!',
+		// seo_description: 'Sustainability | Kuda Villingili',
+		seo_title: `Sustainability | Kuda Villingili Island's Commitment to A Sustainable Tourism`,
+		// seo_title: 'Sustainability | Kuda Villingili',
 		title: response.data.title,
 
 	}

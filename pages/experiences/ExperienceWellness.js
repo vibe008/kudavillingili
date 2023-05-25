@@ -39,7 +39,7 @@ const ExperienceWellness = ( props ) => {
 				{
 					props.isMobile &&
 					<ExperienceLeisureHeaderMobile marginTop='150px' isMobile={ props.isMobile }>
-						<Title isMobile={ props.isMobile } textAlign='center' marginTop='0px'>Wellness</Title>
+						<TitleH2 isMobile={ props.isMobile } textAlign='center' marginTop='0px'>Wellness</TitleH2>
 						<ExperienceWellnessNewPoolImageMobile isMobile={ props.isMobile } background={ props.theSpa.image } />
 						<ExperienceTitleContainerMobile>
 							<ExperienceTitleTextMobile isMobile={ props.isMobile }>{ props.theSpa.title }</ExperienceTitleTextMobile>
@@ -53,7 +53,7 @@ const ExperienceWellness = ( props ) => {
 				{
 					!props.isMobile &&
 					<ExperienceHeader marginTop='150px' isMobile={ props.isMobile }>
-						<Title isMobile={ props.isMobile } textAlign='center' marginTop='150px'>Wellness</Title>
+						<TitleH2 isMobile={ props.isMobile } textAlign='center' marginTop='150px'>Wellness</TitleH2>
 						<ExperienceWellnessSpaDescription isMobile={ props.isMobile }>
 							<TitleH2 isMobile={ props.isMobile }>{ props.theSpa.title }</TitleH2>
 							<BodyText fontSize='16px' textAlign='left' isMobile={ props.isMobile } dangerouslySetInnerHTML={{ __html: props.theSpa.description }} />

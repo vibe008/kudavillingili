@@ -98,8 +98,10 @@ export const getServerSideProps = async () => {
 		articles: response.data.articles,
 		description: response.data.about,
 		header_image: response.data.header_image,
-		seo_description: response.data.seo_description,
-		seo_title: response.data.seo_title,
+		seo_description:"Discover the greatest offers & packages for your dream Maldives vacation on Kuda Villingili Island Resort. Book your stay now & make unforgettable memories!",
+		// seo_description: response.data.seo_description,
+		seo_title: "News and Media | Stay Up-to-Date with Kuda Villingili Island",
+		// seo_title: response.data.seo_title,
 		title: response.data.title,
 
 	}

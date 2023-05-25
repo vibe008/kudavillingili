@@ -112,7 +112,8 @@ const Room = (props) => {
 									</RowAlign>
 								}
 								{
-									<a href="https://be.synxis.com/?Hotel=36480&Chain=28812" target="_blank" rel="noreferrer">
+									<a href="https://be.synxis.com/?Hotel=36480&Chain=28812" target="_blank" rel="nofollow ">
+									{/* <a href="https://be.synxis.com/?Hotel=36480&Chain=28812" target="_blank" rel="noreferrer"> */}
 										<Button isMobile={ props.isMobile }>{ book }</Button>
 									</a>
 								}

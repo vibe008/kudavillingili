@@ -37,7 +37,7 @@ const ExperienceTherapy = ( props ) => {
 				{
 					props.isMobile &&
 					<ExperienceLeisureHeaderMobile marginTop='150px' isMobile={ props.isMobile }>
-						<Title isMobile={ props.isMobile } textAlign='center' marginTop='0px'>Live Performance<br/>& Retail Therapy</Title>
+						<TitleH2 isMobile={ props.isMobile } textAlign='center' marginTop='0px'>Live Performance<br/>& Retail Therapy</TitleH2>
 						<ExperienceChildrenImageMobile
 							isMobile={ props.isMobile }
 							images={ typeof props.weeklyEntertainment.image !== 'undefined' ? props.weeklyEntertainment.image.split(',') : [] }
@@ -57,7 +57,7 @@ const ExperienceTherapy = ( props ) => {
 				{
 					!props.isMobile &&
 					<ExperienceHeader isMobile={ props.isMobile }>
-						<Title isMobile={ props.isMobile } textAlign='center' marginTop='150px'>Live Performance<br/>& Retail Therapy</Title>
+						<TitleH2 isMobile={ props.isMobile } textAlign='center' marginTop='150px'>Live Performance<br/>& Retail Therapy</TitleH2>
 						<ExperienceWeeklyEntertainmentContainer isMobile={ props.isMobile }>
 							<TitleH2 textAlign='center' isMobile={ props.isMobile }>{ props.weeklyEntertainment.title }</TitleH2>
 							<BodyText fontSize='16px' textAlign='left' isMobile={ props.isMobile } dangerouslySetInnerHTML={{ __html : props.weeklyEntertainment.description }} />

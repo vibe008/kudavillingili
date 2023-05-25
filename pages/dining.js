@@ -253,7 +253,8 @@ export const getServerSideProps = async () => {
 
 		breakfast: breakfast,
 		data: response.data,
-		description: response.data.about,
+		description:"Looking for a restaurant in Maldives? Visit Kuda Villingili, our restaurant is a wholesome experience with natural & healthy cuisine ranging from local smoked fish, exotic homemade jams, honey infused with locally grown herbs, & options of plant-based, dairy-free, or gluten-free dishes.",
+		// description: response.data.about,
 		destination_dining: destination_dining,
 		dinner: dinner,
 		earth: earth,
@@ -265,7 +266,8 @@ export const getServerSideProps = async () => {
 		private_events: private_events,
 		seo_description: response.data.seo_description,
 		seo_keywords: response.data.seo_keywords,
-		seo_title: response.data.seo_title,
+		seo_title: "Best Restaurants in the Maldives | Dining at the Best Restaurants in Maldives – Kuda Villingili",
+		// seo_title: response.data.seo_title,
 		spice: spice,
 		the_bar: the_bar,
 		the_beach_bar: the_beach_bar,
@@ -273,7 +275,8 @@ export const getServerSideProps = async () => {
 		the_hawkers: the_hawkers,
 		the_library: the_library,
 		the_restaurant: the_restaurant,
-		title: response.data.title,
+		title:"Best Restaurants in the Maldives | Dining at the Best Restaurants in Maldives – Kuda Villingili",
+		// title: response.data.title,
 
 	}
   	return { props: { data } }

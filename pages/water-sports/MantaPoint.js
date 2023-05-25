@@ -57,7 +57,7 @@ const MantaPoint = ( props ) => {
 			{
 				props.isMobile &&
 				<>
-					<Title isMobile={ props.isMobile } textAlign="center" color="#708DA1">{ title }</Title>
+					<TitleH2 isMobile={ props.isMobile } textAlign="center" color="#708DA1">{ title }</TitleH2>
 					<ComingSoon
 						isMobile={ props.isMobile }
 						color="#708DA1"
@@ -80,7 +80,7 @@ const MantaPoint = ( props ) => {
 				!props.isMobile &&
 				<View height="980px" marginTop="100px">
 					<SectionHeader marine={ true }>
-						<Title isMobile={ props.isMobile } textAlign="center" paddingTop="150px" color="#fff">{ title }</Title>
+						<TitleH2 isMobile={ props.isMobile } textAlign="center" paddingTop="150px" color="#fff">{ title }</TitleH2>
 						<ComingSoon
 							isMobile={ props.isMobile }
 							color="#fff"

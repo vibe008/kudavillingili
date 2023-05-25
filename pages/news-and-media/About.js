@@ -16,6 +16,7 @@ const About = ( props ) => {
 					false &&
 					<Title isMobile={ props.isMobile }  marginTop={ '80px' }>{ props.title }</Title>
 				}
+				<h1>News and Media</h1>
 				<BodyText isMobile={ props.isMobile } marginBottom={ props.isMobile ? '0px' : 'inherit' }>{ props.description }</BodyText>
 			</AlignCenter>
 		</AboutContainer>

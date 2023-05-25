@@ -3,8 +3,8 @@ import Image from "next/image"
 
 import { isMobile } from "react-device-detect"
 
-import collapse_icon from "../../assets/images/collapse.webp";
-import expand_icon from "../../assets/images/expand.webp";
+// import collapse_icon from "../../assets/images/collapse.webp";
+// import expand_icon from "../../assets/images/expand.webp";
 
 const {
 	
@@ -61,7 +61,7 @@ const FAQ = ( props ) => {
 									{ title }
 								</FAQTitle>
 								<FAQStatusImage>
-									<Image src={ expand === index ? collapse_icon : expand_icon } alt="expand_icon" width={ 15 } height={ 15 } />
+									{/* <Image src={ expand === index ? collapse_icon : expand_icon } alt="expand_icon" width={ 15 } height={ 15 } /> */}
 								</FAQStatusImage>
 							</FAQItemContainer>
 							<FAQDescription

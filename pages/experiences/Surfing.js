@@ -59,7 +59,7 @@ const Surfing = ( props ) => {
 			{
 				props.isMobile &&
 				<>
-					<Title isMobile={ props.isMobile } textAlign="center" color="#708DA1">{ heading }</Title>
+					<TitleH2 isMobile={ props.isMobile } textAlign="center" color="#708DA1">{ heading }</TitleH2>
 					<ExperienceLeisureHeaderMobile isMobile={ props.isMobile }>
 						<ExperienceWellnessNewPoolImageMobile isMobile={ props.isMobile } background={ cdn_image } />
 						<ExperienceTitleContainerMobile isMobile={ props.isMobile } color="#708DA1">
@@ -81,7 +81,7 @@ const Surfing = ( props ) => {
 				!props.isMobile &&
 				<View height="980px">
 					<SectionHeader>
-						<Title isMobile={ props.isMobile } textAlign="center" paddingTop="150px" color="#708DA1">{ heading }</Title>
+						<TitleH2 isMobile={ props.isMobile } textAlign="center" paddingTop="150px" color="#708DA1">{ heading }</TitleH2>
 					</SectionHeader>
 					<ExperienceContainer positionChange="absolute" positionTop="230px">
 						<ExperienceImageAlign background={ cdn_image } />

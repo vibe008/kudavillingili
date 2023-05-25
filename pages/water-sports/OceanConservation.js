@@ -55,7 +55,7 @@ const OceanConservation = ( props ) => {
 			{
 				props.isMobile &&
 				<>
-					<Title isMobile={ props.isMobile } textAlign="center" color="#708DA1">{ heading }</Title>
+					<TitleH2 isMobile={ props.isMobile } textAlign="center" color="#708DA1">{ heading }</TitleH2>
 					<ExperienceLeisureHeaderMobile isMobile={ props.isMobile }>
 						<ExperienceWellnessNewPoolImageMobile isMobile={ props.isMobile } background={ cdn_image } />
 						<ExperienceTitleContainerMobile isMobile={ props.isMobile } water={ true } color={ "#708DA1" }>
@@ -72,7 +72,7 @@ const OceanConservation = ( props ) => {
 				!props.isMobile &&
 				<View height="980px" marginTop="100px">
 					<SectionHeader marine={ true }>
-						<Title isMobile={ props.isMobile } textAlign="center" paddingTop="150px" color="#fff">{ heading }</Title>
+						<TitleH2 isMobile={ props.isMobile } textAlign="center" paddingTop="150px" color="#fff">{ heading }</TitleH2>
 					</SectionHeader>
 					<ExperienceContainer positionChange="absolute" positionTop="230px">
 						<ExperienceImageAlign background={ cdn_image } />

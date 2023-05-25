@@ -117,8 +117,10 @@ export async function getServerSideProps() {
 		footnote: response.data.footnote,
 		faq,
 		header_image: response.data.header_image,
-		seo_description: response.data.seo_description,
-		seo_title: response.data.seo_title,
+		seo_description:"Enjoy a Covid-free environment on our island. Rest assured to be serviced with utmost care & safety by our fully vaccinated team members. Visit us now!",
+		// seo_description: response.data.seo_description,
+		seo_title:"COVID-19 Update | Kuda Villingili Island Resort Health & Safety Protocols",
+		// seo_title: response.data.seo_title,
 		title: response.data.title,
 
 	}

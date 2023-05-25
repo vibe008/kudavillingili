@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { isMobile } from "react-device-detect";
-
+import Head from "next/head";
 import logo from '../../assets/images/logo_with_tag.svg';
 import kiwi_logo from '../../assets/images/kiwi_logo.svg';
 import FooterForm from "../../pages/contact/FooterForm"
@@ -36,7 +36,36 @@ function validateEmail(email) {
 }
 
 const Footer = ( props ) => {
-
+	function  addScema (){
+   return {
+	__html : `
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "Kuda Villingili",
+		"url": "https://kudavillingili.com/",
+		"logo": "https://kudavillingili.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fassets%2Fimages%2Flogo_golden.a784d386a43ab121881a9d9488e9faf3.svg&w=1920&q=75",
+		"contactPoint": [{
+		  "@type": "ContactPoint",
+		  "telephone": "(+960) 4001700",
+		  "contactType": "reservations",
+		  "areaServed": "MV",
+		  "availableLanguage": "en"
+		},{
+		  "@type": "ContactPoint",
+		  "telephone": "(+960)4000900",
+		  "contactType": "customer service",
+		  "areaServed": "MV",
+		  "availableLanguage": "en"
+		}],
+		"sameAs": [
+		  "https://www.instagram.com/kudavillingiliresort",
+		  "https://www.facebook.com/kudavillingiliresort"
+		]
+	  
+	`
+   }
+}
 	const {
 
 		languageDetected
@@ -120,6 +149,7 @@ const Footer = ( props ) => {
 
 	}
 	return(
+		<>
 		<FooterComponent isMobile={ is_mobile }>
 			<ContainerRow isMobile={ is_mobile }>
 				<ContainerByThree isMobile={ is_mobile } alignItemsCenter={ true }>
@@ -133,7 +163,7 @@ const Footer = ( props ) => {
 				<MarginTopForMobile isMobile={ is_mobile } marginTop={ '60px'} />
 				<ContainerByThree isMobile={ is_mobile } languageDetected={ languageDetected }>
 					<TextColorLightGrey isMobile={ is_mobile } marginBottom={ '10px' }>
-						<span>{ footer_items_text[languageDetected].reservations }<script src="https://onboard.triptease.io/bootstrap.js?integrationId=01G34JXQRXJ8T0VEW6H67VZ6MK" defer async crossorigin="anonymous" type="text/javascript"></script></span>
+						<span>{ footer_items_text[languageDetected].reservations }<script src="https://onboard.triptease.io/bootstrap.js?integrationId=01G34JXQRXJ8T0VEW6H67VZ6MK" defer async crossOrigin="anonymous" type="text/javascript"></script></span>
 					</TextColorLightGrey>
 					<TextColorLightGrey isMobile={ is_mobile } marginBottom={ '10px' }>
 						<span>{ footer_items_text[languageDetected].general_enquiries }</span>
@@ -172,7 +202,16 @@ const Footer = ( props ) => {
 			/>
 				</ContainerByThree>
 			</ContainerRow>
+			
 		</FooterComponent>
+		<Head>
+		<script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addScema()}
+          key="product-jsonld"
+        />
+		</Head>
+		</>
 	)
 }
 

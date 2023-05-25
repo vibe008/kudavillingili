@@ -59,7 +59,7 @@ const TheSpa = ( props ) => {
 			{
 				props.isMobile &&
 				<>
-					<Title isMobile={ props.isMobile } textAlign="center">{ heading }</Title>
+					<TitleH2 isMobile={ props.isMobile } textAlign="center">{ heading }</TitleH2>
 					<ExperienceLeisureHeaderMobile isMobile={ props.isMobile }>
 						<ExperienceWellnessNewPoolImageMobile isMobile={ props.isMobile } background={ cdn_image } />
 						<ExperienceTitleContainerMobile isMobile={ props.isMobile }>
@@ -81,7 +81,7 @@ const TheSpa = ( props ) => {
 				!props.isMobile &&
 				<View height="980px">
 					<SectionHeader>
-						<Title isMobile={ props.isMobile } textAlign="center" paddingTop="150px">{ heading }</Title>
+						<TitleH2 isMobile={ props.isMobile } textAlign="center" paddingTop="150px">{ heading }</TitleH2>
 					</SectionHeader>
 					<ExperienceContainer positionChange="absolute" positionTop="230px">
 						<ExperienceDescription>

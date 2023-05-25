@@ -53,7 +53,8 @@ const HomeRooms = ( props ) => {
 							<BodyText isMobile={ props.isMobile } textAlign="left" marginTop={ props.isMobile ? "40px" : "20px" } fontSize="16px" languageDetected={ languageDetected }>{ description }</BodyText>
 							<SplitRow marginTop={ "10px" } splitReverse={ languageDetected === "ar" ? true : false }>
 								<RowAlign isMobile={ props.isMobile } forcedRow={ true }>
-									<Link href={"/"+ value.link } passHref>
+									<Link href={"https://www.kudavillingili.com/360" } passHref>
+									{/* <Link href={"/"+ value.link } passHref> */}
 										<a>
 											<BodyText isMobile={ props.isMobile } marginTop="20px" textAlign="left" color="#C1A292" bold={ true } cursorPointer={ true } languageDetected={ languageDetected }>{ more }</BodyText>
 										</a>

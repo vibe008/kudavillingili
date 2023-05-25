@@ -29,7 +29,7 @@ const TransferInformation = ( props ) => {
 	return(
 
 		<Container paddingBottom={ props.isMobile ? "unset" : "200px" } isMobile={ props.isMobile } paddingTopMobile={ props.isMobile ? "unset" : "inherit" }>
-			<Title textAlign='center' >{ props.transferHeading }</Title>
+			<TitleH2 textAlign='center' >{ props.transferHeading }</TitleH2>
 			<TransferInformationDescriptionContainer isMobile={ props.isMobile }>
 				<BodyText
 					isMobile={ props.isMobile }
@@ -45,7 +45,7 @@ const TransferInformation = ( props ) => {
 					<TransferImage src={ props.transferImage } />
 				</TransferInformationHalf>
 				<TransferInformationHalf isMobile={ props.isMobile } padding={ props.isMobile ? "20px" : "unset" }>
-					<Title textAlign={ props.isMobile ? "center" : "left" } languageDetected={ languageDetected }>{ props.transferDetailHeading }</Title>
+					<TitleH2 textAlign={ props.isMobile ? "center" : "left" } languageDetected={ languageDetected }>{ props.transferDetailHeading }</TitleH2>
 					<TextColorLightGrey isMobile={ props.isMobile } textAlign='left' fontSize={ props.isMobile ? '14px' : '16px' } languageDetected={ languageDetected }>
 						{ props.transferDetailDescription }
 					</TextColorLightGrey>

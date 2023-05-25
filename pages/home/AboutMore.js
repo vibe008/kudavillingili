@@ -5,7 +5,7 @@ import { Carousel } from "react-responsive-carousel"
 const {
 
 	Container,
-	Title,
+	TitleH2,
 	View,
 	ViewBackgroundVariableHeight,
 
@@ -126,7 +126,7 @@ const AboutMore = ( props ) => {
 		<View>
 			<ViewBackgroundVariableHeight isMobile={ props.isMobile } backgroundColor={ "#F5F5F5" } height={ "80%" }/>
 			<Container isMobile={ props.isMobile }>
-				<Title isMobile={ props.isMobile } paddingTop={ "100px" } textAlignCenter={ true } textAlign="center" dangerouslySetInnerHTML={{ __html: translations.time_space_redefined[ languageDetected ] }} />
+				<TitleH2 isMobile={ props.isMobile } paddingTop={ "100px" } textAlignCenter={ true } textAlign="center" dangerouslySetInnerHTML={{ __html: translations.time_space_redefined[ languageDetected ] }} />
 				{
 					!props.isMobile &&
 					<ImagesContainer isMobile={ props.isMobile }>

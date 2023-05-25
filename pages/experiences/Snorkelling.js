@@ -60,7 +60,7 @@ const Snorkelling = ( props ) => {
 			{
 				props.isMobile &&
 				<>
-					<Title isMobile={ props.isMobile } textAlign="center" color="">{ heading }</Title>
+					<TitleH2 isMobile={ props.isMobile } textAlign="center" color="">{ heading }</TitleH2>
 					<ExperienceLeisureHeaderMobile isMobile={ props.isMobile }>
 						<ExperienceWellnessNewPoolImageMobile isMobile={ props.isMobile } background={ cdn_image } />
 						<ExperienceTitleContainerMobile isMobile={ props.isMobile } water={ true } color={ "#708DA1" }>
@@ -82,7 +82,7 @@ const Snorkelling = ( props ) => {
 				!props.isMobile &&
 				<View height="980px">
 					<SectionHeader marine={ false }>
-						<Title isMobile={ props.isMobile } textAlign="center" paddingTop="150px" color="">{ heading }</Title>
+						<TitleH2 isMobile={ props.isMobile } textAlign="center" paddingTop="150px" color="">{ heading }</TitleH2>
 					</SectionHeader>
 					<ExperienceContainer positionChange="absolute" positionTop="230px">
 						<ExperienceImageAlign background={ cdn_image } />

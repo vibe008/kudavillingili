@@ -2,7 +2,7 @@ const {
 
 	BodyText,
 	RowAlign,
-	Title,
+	TitleH2,
 
 } = require("../../style/common/Common.Styled")
 const {
@@ -34,7 +34,7 @@ const HomeAccomodation = ( props ) => {
 			<RowAlign isMobile={ isMobile }>
 				<AccomodationHeadingContainer isMobile={ isMobile }>
 					<AccomodationHeadingTextContainer isMobile={ isMobile }>
-						<Title isMobile={ isMobile } languageDetected={ languageDetected }>{ title }</Title>
+						<TitleH2 isMobile={ isMobile } languageDetected={ languageDetected }>{ title }</TitleH2>
 						<BodyText isMobile={ isMobile } textAlign="left" marginTop="0px" fontSize="16px" languageDetected={ languageDetected }>
 							{ description }
 						</BodyText>
